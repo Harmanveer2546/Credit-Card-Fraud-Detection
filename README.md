@@ -11,6 +11,19 @@ by recognizing potentially fraudulent use of credit cards in your payment enviro
 2. Regardless of how you define ground truth, the vast majority of charges are not fraudulent.<br>
 3. Most merchants aren't experts at evaluating the business impact of fraud.<br>
 
+## Dataset:
+### In the context of the credit card fraud dataset, the terms represent the following features:
+
+Time: The number of seconds elapsed between the current transaction and the first transaction in the dataset. This feature can be used to analyze any temporal patterns or trends in the data.<br>
+
+V1 to V28: These are anonymized numerical features resulting from a dimensionality reduction technique, such as PCA (Principal Component Analysis), applied to the original credit card transaction data. The actual meaning of these features is not disclosed due to confidentiality reasons.<br>
+
+Amount: The transaction amount, representing the monetary value of the transaction made using the credit card.<br>
+
+Class: This is the target variable or the label indicating whether a transaction is fraudulent or not. It is a binary variable, where 1 represents a fraudulent transaction and 0 represents a non-fraudulent transaction.<br>
+
+The V1 to V28 features are transformed versions of the original features to protect the privacy of the individuals involved in the transactions. These transformed features are often used in credit card fraud detection models to identify patterns and anomalies associated with fraudulent transactions while preserving data privacy.<br>
+
 ## Problem Statement:
 The Credit Card Fraud Detection Problem includes modeling past credit card transactions with the knowledge of the ones that turned out to be fraud. This model is then used to identify whether a new transaction is 
 fraudulent or not. Our aim here is to detect 100% of the fraudulent transactions while minimizing the incorrect fraud classifications.
